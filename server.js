@@ -41,7 +41,7 @@ app.use((req, res, next) => {
 // Routes
 app.use('/fruits', fruitsController);
 
-//Catch all route. If the uses try to reach a route that doesn't match the ones above it will catch them and redirect to the Index page
+//Catch all route. If the uses try to reach a route that doesn't match the ones above it will catch them and redirect to the Index page.
 app.get('/*', (req, res) => {
   res.send(`
     <div>
