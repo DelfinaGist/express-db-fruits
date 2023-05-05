@@ -1,5 +1,5 @@
-const React = require("react")
-const Nav = require("../components/Nav")
+const React = require("react");
+const Nav = require("../components/Nav");
 
 class DefaultLayout extends React.Component {
   render() {
@@ -9,7 +9,7 @@ class DefaultLayout extends React.Component {
           <title>
             {this.props.title}
           </title>
-          <link rel="stylesheet" href="/css/app.css" />
+          <link rel="stylesheet" href="./css/app.css" />
         </head>
         <body>
           <Nav link={this.props.link} text={this.props.text}/>
@@ -17,8 +17,8 @@ class DefaultLayout extends React.Component {
           {this.props.children}
         </body>
       </html>
-    )
+    );
   }
 }
 
-module.exports = DefaultLayout
+module.exports = DefaultLayout;
